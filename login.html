@@ -1,0 +1,47 @@
+<!DOCTYPE html> 
+<html ng-app="zinstantlyApp">
+<head>
+  <title>Zinstatntly</title>
+  <link rel="stylesheet" href="css/styles.css">
+   <link rel="stylesheet" href="content/bootstrap.css">
+   <script src="lib/jquery/jquery-1.9.1.min.js"></script>
+   <script src="lib/bootstrap/bootstrap.js"></script>
+   <script src="lib/angular.js"></script>
+    <script src="lib/parse/parse-1.6.14.js"></script>
+  
+ </head>
+<body>
+  <div class="container"  ng-controller="zAuthCtrl" >
+   <div id="divHome" class="row"  style="display:none;">
+     <div class="container">
+        <div class="row div-header">
+        <div class="col-xs-2" >
+         <img id="logo" style="height:100%; width:100%;" src="/assets/images/logo_top-01.png" >
+        </div> 
+        <div class="col-xs-8">
+          <div id="divName" clasS="div-header-name"></div><br>
+          <div id="divLogout" class="div-header-logout" ng-click="Logout()">Logout</div> 
+        </div>
+        <div class="col-xs-2">
+          <img id="imgProfile" style="height:100%; width:100%;" src="/assets/images/user_mask_view.png" alt="profile" >
+        </div>
+   </div>
+    <div class="row">
+      <div class="container">
+        <div class="div-body-container">
+          
+        </div>
+   
+     </div>
+   </div>
+     </div>
+   </div>
+   <div id="divLogin" class="row">
+        <div class="div-login-container">
+             <input type="image" ng-click="Login()"  class="img-login" src="assets/images/btn_signin_01_normal.png" alt="signIn" >
+        </div>
+    </div>
+ </div>
+<script src="login.js"></script>
+</body>
+</html>

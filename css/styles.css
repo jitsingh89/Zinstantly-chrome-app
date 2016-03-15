@@ -1,0 +1,46 @@
+/* CSS file placeholder. */
+
+.div-header{
+  
+    width: 100%;
+    height: 90px;
+    margin: 5px 0px !important;
+    background-color: #5FCAE6;
+}
+
+.div-body-container{
+ height:710px;
+ background-color:#EDF3F5; 
+}
+
+
+
+.div-header-logout{
+  float:right;
+  color:white;
+  font:13px;
+  cursor: pointer;
+}
+
+.div-header-name{
+  float:right;
+  min-width:50px;
+  color:white;
+  font:13px;
+}
+
+
+
+
+.div-login-container
+{
+ background-image: url('../assets/images/login_popup-01.png' );
+  background-repeat: no-repeat;
+  height:850px;
+  width:710px;
+}
+
+.img-login{
+   margin-top: 435px;
+    margin-left: 125px;
+}

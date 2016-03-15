@@ -1,0 +1,34 @@
+{
+  "manifest_version": 2,
+  "name": "Zinstatntly",
+  "short_name": "Zinstatntly",
+  "description": "",
+  "version": "0.0.1",
+  "minimum_chrome_version": "38",
+ "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCDJB6ZGcGxtlr/34s+TKgi84QiP7DMekqOjSUS2ubmbhchlM6CN9gYdGQ1aBI3TBXG3YaAu+XyutFA8M8NLLWc4OOGByWaGV11DP6p67g8a+Ids/gX6cNSRnRHiDZXAd44ATxoN4OZjZJk9iQ26RIUjwX07bzntlI+frwwKCk4WQIDAQAB",
+  "icons": {
+    "16": "assets/images/icon/icon_16.png",
+    "128": "assets/images/icon/icon_128.png"
+  },
+
+  "app": {
+    "background": {
+      "scripts": ["main.js"]
+    }
+  },
+   "permissions":[
+                  {"fileSystem": ["write", "retainEntries", "directory"]},
+                 "storage",
+                 "identity",
+                 "https://accounts.google.com/*",
+                 "https://www.googleapis.com/*",
+                 "https://lh5.googleusercontent.com/*",
+                 "http://www.parsecdn.com/*",
+                  "https://api.parse.com/*"
+                 ],
+   "oauth2": {
+    "client_id": "497291774654.apps.googleusercontent.com",
+    "scopes": ["https://www.googleapis.com/auth/plus.login"]
+   },
+   "content_security_policy": "default-src 'self'; connect-src * data: blob: filesystem:; style-src 'self' data: chrome-extension-resource: 'unsafe-inline'; img-src 'self' data: chrome-extension-resource:; frame-src 'self' data: chrome-extension-resource:; font-src 'self' data: chrome-extension-resource:; media-src * data: blob: filesystem:;"
+}
