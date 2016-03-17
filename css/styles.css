@@ -9,9 +9,19 @@
 }
 
 .div-body-container{
- height:710px;
+ height:774px;
  background-color:#EDF3F5; 
 }
+
+
+.div-userType-container{
+  margin-top: 346px;
+  margin-left: 180px;
+  height: 20px;
+  width: 226px;
+  background-color: #EDF3F5;
+}
+
 
 
 

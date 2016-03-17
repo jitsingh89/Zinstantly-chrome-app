@@ -8,40 +8,95 @@
    <script src="lib/bootstrap/bootstrap.js"></script>
    <script src="lib/angular.js"></script>
     <script src="lib/parse/parse-1.6.14.js"></script>
-  
  </head>
 <body>
   <div class="container"  ng-controller="zAuthCtrl" >
-   <div id="divHome" class="row"  style="display:none;">
-     <div class="container">
-        <div class="row div-header">
-        <div class="col-xs-2" >
-         <img id="logo" style="height:100%; width:100%;" src="/assets/images/logo_top-01.png" >
-        </div> 
-        <div class="col-xs-8">
-          <div id="divName" clasS="div-header-name"></div><br>
-          <div id="divLogout" class="div-header-logout" ng-click="Logout()">Logout</div> 
+     <div id="divHome" class="row"  >
+       <div class="container">
+         <div class="row div-header">
+                  <div class="col-xs-2" >
+                   <img id="logo" style="height:100%; width:100%;" src="/assets/images/logo_top-01.png" >
+                  </div> 
+                  <div class="col-xs-8">
+                    <div id="divName" clasS="div-header-name"></div><br>
+                    <div id="divLogout" class="div-header-logout" ng-click="Logout()">Logout</div> 
+                  </div>
+                  <div class="col-xs-2">
+                    <img id="imgProfile" style="height:100%; width:96%;" src="/assets/images/user_mask_view.png" alt="profile" >
+                  </div>
+          </div>
+          <div class="div-body-container">
+            <div class="container">
+              <div id="divQuestionDashboard" class="row">
+                    <div class="col-xs-4">
+                      <a ng-click="CreateQuestion()">Create Question</a>
+                    </div>
+                    <div class="col-xs-8">
+                      <div class="form-group" id="divQuestion">
+                     </div>
+                   </div>
+              </div>
+              <div id="divCreateQuestion" class="row" style="display:none;">
+                 <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                      <label class="control-label col-sm-2" for="email">New Question:</label>
+                      <div class="col-sm-10">
+                          <textarea class="form-control" rows="5" id="comment"></textarea>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-2" for="pwd">Answer Choice:</label>
+                      <div class="col-sm-10"> 
+                          <div class="input-group" style="width: 100%">
+                              <span class="input-group-addon"><input id="chkChoice1" type="checkbox"> </span>
+                              <input  id="txtChoice1"  type="text" class="form-control" placeholder="Type your Answer here"/>
+                          </div>
+                          <br/>
+                            <div class="input-group" style="width: 100%">
+                              <span class="input-group-addon"><input id="chkChoice2" type="checkbox"> </span>
+                              <input id="txtChoice2" type="text" class="form-control" placeholder="Type your Answer here"/>
+                          </div>
+                          <br/>
+                            <div class="input-group" style="width: 100%">
+                              <span class="input-group-addon"><input id="chkChoice3" type="checkbox"> </span>
+                              <input id="txtChoice3"  type="text" class="form-control" placeholder="Type your Answer here"/>
+                          </div>
+                          <br/>
+                            <div class="input-group" style="width: 100%">
+                               <span class="input-group-addon"><input id="chkChoice4" type="checkbox"> </span>
+                               <input id="txtChoice4"  type="text" class="form-control" placeholder="Type your Answer here"/>
+                          </div>
+                       </div>
+                    </div>
+                    <div class="form-group"> 
+                      <div class="col-sm-offset-2 col-sm-10">
+                        <div style="float:right;">
+                         <button type="submit" ng-click="CancelQuestion()" class="btn btn-default">Cancel</button>&nbsp;&nbsp;
+                        <button type="submit"  class="btn btn-default" disable="true">Submit</button>
+                        </div>
+                      </div>
+                    </div>
+              </form>
+              </div>
+              
+              
+            </div>
         </div>
-        <div class="col-xs-2">
-          <img id="imgProfile" style="height:100%; width:100%;" src="/assets/images/user_mask_view.png" alt="profile" >
-        </div>
-   </div>
-    <div class="row">
-      <div class="container">
-        <div class="div-body-container">
-          
-        </div>
-   
+       </div>
      </div>
-   </div>
+     <div id="divUserType" class="row" style="display:none;" >
+             <div class="div-userType-container">
+               <input type="radio" ng-click="TeacherSignUp()" name="userType" id="rdoTeacher" value="Teacher"> I am a teacher &nbsp;
+               <input type="radio" ng-click="StudentSignUp()" name="userType" id="rdoStudnet" value="Student"> I am student        
+          </div>
      </div>
-   </div>
-   <div id="divLogin" class="row">
-        <div class="div-login-container">
-             <input type="image" ng-click="Login()"  class="img-login" src="assets/images/btn_signin_01_normal.png" alt="signIn" >
-        </div>
-    </div>
- </div>
-<script src="login.js"></script>
+     <div id="divLogin" class="row"  style="display:none;">
+          <div class="div-login-container">
+               <input type="image" ng-click="Login()"  class="img-login" src="assets/images/btn_signin_01_normal.png" alt="signIn" >
+          </div>
+      </div>
+  </div>
+<script src="scripts/index.js"></script>
+<script src="scripts/services/userService.js"></script>
 </body>
 </html>

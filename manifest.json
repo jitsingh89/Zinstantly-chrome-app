@@ -13,7 +13,7 @@
 
   "app": {
     "background": {
-      "scripts": ["main.js"]
+      "scripts": ["scripts/main.js"]
     }
   },
    "permissions":[
@@ -24,7 +24,7 @@
                  "https://www.googleapis.com/*",
                  "https://lh5.googleusercontent.com/*",
                  "http://www.parsecdn.com/*",
-                  "https://api.parse.com/*"
+                 "https://api.parse.com/*"
                  ],
    "oauth2": {
     "client_id": "497291774654.apps.googleusercontent.com",
