@@ -1,5 +1,5 @@
  
-angular.module("zinstantlyApp.user",[])
+angular.module("zinstantlyApp.User",[])
 .factory('userService', function () {
  
   var serviceObj = {};

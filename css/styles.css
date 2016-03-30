@@ -13,6 +13,41 @@
  background-color:#EDF3F5; 
 }
 
+.div-left-dash
+{
+  margin-left:5px;
+  overflow: auto;
+  height: 750px;
+}
+
+
+.label-font-weight
+{
+     
+    font-weight: normal;
+}
+.a-edit-question{
+  float:right;
+  cursor:pointer;
+  margin-right:20px;
+}
+
+.div-left-dash>a
+{
+  cursor:pointer;
+}
+
+.ul-qn-lst
+{
+  width:100%;
+}
+
+.ul-qn-lst>li>a
+{
+  cursor:pointer;
+}
+
+
 
 .div-userType-container{
   margin-top: 346px;
@@ -22,6 +57,14 @@
   background-color: #EDF3F5;
 }
 
+
+.img-profile-pic
+{
+    margin-top: 3px;
+    margin-left: 10px;
+    height: 100%;
+    width: 100%;
+}
 
 
 

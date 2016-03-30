@@ -21,14 +21,10 @@
                  "storage",
                  "identity",
                  "https://accounts.google.com/*",
-                 "https://www.googleapis.com/*",
-                 "https://lh5.googleusercontent.com/*",
-                 "http://www.parsecdn.com/*",
-                 "https://api.parse.com/*"
+                 "https://lh5.googleusercontent.com/*"
                  ],
    "oauth2": {
     "client_id": "497291774654.apps.googleusercontent.com",
     "scopes": ["https://www.googleapis.com/auth/plus.login"]
-   },
-   "content_security_policy": "default-src 'self'; connect-src * data: blob: filesystem:; style-src 'self' data: chrome-extension-resource: 'unsafe-inline'; img-src 'self' data: chrome-extension-resource:; frame-src 'self' data: chrome-extension-resource:; font-src 'self' data: chrome-extension-resource:; media-src * data: blob: filesystem:;"
+   }
 }
